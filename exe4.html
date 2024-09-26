@@ -1,0 +1,40 @@
+<!-- Implemente um programa que converta a temperatura de Celsius para Fahrenheit ou vice-versa. Use operadores 
+aritméticos para realizar o cálculo. Este exercício combina operadores aritméticos com a lógica condicional, 
+permitindo que o programa escolha a fórmula de conversão correta com base na entrada do usuário-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+        let temp=Number(prompt("entre com a temperatura"))
+        let temperatura = prompt(" entre com 'c' para ceusius ou 'f' para fahrenheit ").toLowerCase()
+
+        if ( temperatura === 'c'){
+
+            F = (9/5) * temp + 32
+
+            document.write ( " a temepratura de celsius para fahrenheit é :" + F + "F")
+
+        } else if ( temperatura === 'f'){
+
+            C = (9/5) * (temp - 32)
+
+            document.write ( " a temepratura de  fahrenheit para celcius é : " + C + "C")
+
+
+        }else{
+            document.write (" você não quer saber a temperatura nem em ceucius e nem em fahrenheit")
+        }
+
+
+    </script>
+    
+</body>
+</html>
